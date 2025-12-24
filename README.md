@@ -32,6 +32,9 @@ Some model files exceed **100 MB**. GitHub ZIP downloads will **not** include th
 Follow these steps to get **all files including large models**:
 
 cd C:\Users\HP\Downloads
+
 git clone https://github.com/yb0297/Btech-Final-Year-Project.git
+
 cd Btech-Final-Year-Project
+
 git lfs pull
