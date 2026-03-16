@@ -146,5 +146,41 @@ VS Code
 
 ---
 
-# Project Structure
+
+---
+
+# Research Publication
+
+This project is based on my published research paper:
+
+Fake News Detection Using Bidirectional RNN  
+IEEE Conference Publication
+
+IEEE Xplore Link:
+https://ieeexplore.ieee.org/document/11042304
+
+This repository contains the extended implementation with additional experimentation and a GUI interface.
+
+---
+
+# Future Improvements
+
+• Deploy the model as a web application  
+• Integrate real-time news APIs  
+• Improve performance using larger transformer models  
+• Build a browser extension for fake news detection  
+
+---
+
+# Author
+
+Yogesh Yelewad  
+B.Tech Electronics and Computer Engineering  
+SRM Institute of Science and Technology
+
+LinkedIn:  
+https://www.linkedin.com/in/yogeshyelewad
+
+GitHub:  
+https://github.com/yb0297
 
