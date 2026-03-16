@@ -1,79 +1,50 @@
 
-# AI Research Project | Fake News Detection & News Category Classification using Deep Learning
+# 🧠 AI Research Project
 
-This repository contains the extended implementation of my **B.Tech Final Year AI Research Project**, focused on **Fake News Detection and News Category Classification using Deep Learning and Natural Language Processing (NLP).**
+# Fake News Detection & News Category Classification using Deep Learning
 
-The project extends the work presented in my **IEEE Conference research paper** and includes additional experimentation, model improvements, and a **GUI-based real-time prediction system.**
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-TensorFlow-orange)
+![NLP](https://img.shields.io/badge/NLP-Transformers-green)
+![IEEE Paper](https://img.shields.io/badge/Publication-IEEE-red)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-Research Paper (IEEE Xplore)
+This repository contains the **extended implementation of my B.Tech Final Year AI Research Project** focused on **Fake News Detection and News Category Classification using Deep Learning and Natural Language Processing (NLP).**
+
+The project extends the work presented in my **IEEE Conference research paper** and includes additional experimentation, improved models, and a **GUI-based real-time prediction system**.
+
+📄 **Research Paper (IEEE Xplore)**
 [https://ieeexplore.ieee.org/document/11042304](https://ieeexplore.ieee.org/document/11042304)
 
-## PROJECT DESCRIPTION
+---
 
-With the rapid growth of online news platforms, the spread of **misinformation and unverified content** has become a major global challenge. Automatically detecting fake news and organizing news content into categories is an important task in modern information systems.
+# 📌 Project Overview
 
-This project develops an **AI-based intelligent news analysis system** capable of:
+With the rapid growth of digital media, **misinformation and fake news have become a major global challenge**.
 
-• Detecting **fake vs real news articles**
-• Classifying news into **multiple categories**
-• Providing **real-time predictions using a graphical interface**
+This project builds an **AI-powered intelligent news analysis system** capable of:
 
-The system combines **deep learning architectures with transformer-based embeddings** to achieve high classification accuracy and reliable predictions.
+✔ Detecting **Fake vs Real news**
+✔ Classifying news into **multiple categories**
+✔ Providing **real-time predictions through a GUI interface**
 
-## KEY CONTRIBUTIONS
+The system combines **Deep Learning architectures with Transformer-based embeddings** to achieve **high accuracy and robust predictions**.
 
-• Developed a **Hybrid Deep Learning Architecture (BiRNN + MLP)** for fake news detection
-• Implemented **DistilBERT Transformer model** for news category classification
-• Built a **complete NLP preprocessing pipeline** for text cleaning and feature preparation
-• Achieved **95%+ classification accuracy** across tasks
-• Designed a **GUI-based AI application using Tkinter** for real-time predictions
-• Published the research findings in an **IEEE Conference (Scopus / Web of Science indexed)**
+---
 
-## TECHNOLOGIES USED
+# 🏗 System Architecture
 
-Programming
-Python
+Below is the high-level architecture of the system.
 
-Artificial Intelligence
-Machine Learning
-Deep Learning
-Natural Language Processing
+![System Architecture](flowchart.png)
 
-Deep Learning Models
-Recurrent Neural Networks (RNN)
-Bidirectional Recurrent Neural Networks (BiRNN)
-Multi-Layer Perceptron (MLP)
-DistilBERT Transformer
+---
 
-Libraries and Frameworks
-TensorFlow / Keras
-PyTorch
-HuggingFace Transformers
-Scikit-learn
-NumPy
-Pandas
-Matplotlib
+# 🧠 Model Architecture
 
-## NATURAL LANGUAGE PROCESSING PIPELINE
+## Fake News Detection Model
 
-The text data is processed through several NLP preprocessing stages before model training:
-
-• Tokenization
-• Stopword removal
-• Stemming
-• Lemmatization
-• Text padding
-• Feature encoding
-
-## MODEL ARCHITECTURE
-
-The project consists of **two major AI pipelines**.
-
-1. Fake News Detection
-
-A hybrid deep learning architecture was designed to classify news as **fake or real**.
-
-Architecture Flow
+Hybrid Deep Learning Model:
 
 BiRNN
 ↓
@@ -81,148 +52,197 @@ Feature Extraction
 ↓
 MLP Classifier
 ↓
-Prediction (Fake / Real)
+Fake / Real Prediction
 
-Model Performance
+![Model Architecture](rnn%20mlp%20block.png)
 
-Accuracy Achieved: **95.44%**
+---
 
-2. News Category Classification
+# 🤖 Transformer Model
 
-A **DistilBERT Transformer model** is used for contextual embedding and multi-class news classification.
+For news category classification, the project uses **DistilBERT**, a lightweight transformer model optimized for NLP tasks.
 
-Categories include examples such as:
+![DistilBERT Architecture](DistilBert%20dia.png)
 
-• Politics
-• Sports
-• Technology
-• Science
-• Entertainment
-• World News
+---
 
-Model Performance
+# 📊 Model Performance
 
-Accuracy Achieved: **95.12%**
+## Training Graph
 
-## DATASETS
+![Training Graph](mlprnn%20graph.png)
+
+---
+
+## Confusion Matrix (BiMLP-RNN)
+
+![Confusion Matrix](Confusuion%20matrix%20Bimlprnn.png)
+
+---
+
+## BERT Model Heatmap
+
+![Heatmap](heatmap%20bert.png)
+
+---
+
+# 🧪 NLP Pipeline
+
+The dataset is processed through a complete **Natural Language Processing pipeline** before training.
+
+Steps include:
+
+• Tokenization
+• Stopword Removal
+• Stemming
+• Lemmatization
+• Text Padding
+• Feature Encoding
+
+---
+
+# 📊 Dataset
 
 The models were trained using publicly available datasets.
 
-IFND (Indian Fake News Dataset)
-News Category Dataset
+**Datasets Used**
 
-These datasets were cleaned, preprocessed, and transformed using NLP techniques before training.
+• IFND (Indian Fake News Dataset)
+• News Category Dataset
 
-## GRAPHICAL USER INTERFACE
+Dataset files included in the repository:
 
-To demonstrate the AI models interactively, a **Tkinter-based GUI application** was developed.
+```
+NEWS.csv
+CATEGORY.csv
+```
 
-The GUI allows users to:
+---
 
-• Enter news text
-• Detect whether the news is **fake or real**
-• Predict the **news category**
-• View prediction results instantly
+# 🖥 Graphical User Interface
 
-This provides a **real-time AI prediction system** that showcases the trained models.
+A **Tkinter-based GUI application** allows users to interact with the trained AI models.
 
-## RESEARCH PUBLICATION
+Users can:
+
+✔ Enter news text
+✔ Detect whether the news is **Fake or Real**
+✔ Predict the **news category**
+✔ View results instantly
+
+---
+
+## GUI Screens
+
+### Home Page
+
+![Home](Homepage.png)
+
+---
+
+### Task Selection
+
+![Task](choose%20a%20task%20apge.png)
+
+---
+
+### Input Interface
+
+![Input](input%20page.png)
+
+---
+
+### Prediction Output
+
+![Prediction](Real%20prediction.png)
+
+---
+
+# 📂 Repository Structure
+
+```
+Btech-Final-Year-Project
+│
+├── news_category_model/                # DistilBERT trained model
+├── news_category_model_trainer/       # Training artifacts
+├── logs/                               # Training logs
+│
+├── hybrid_model.h5                     # Trained hybrid model
+├── tokenizer.pkl                       # Saved tokenizer
+├── label_encoder.pkl                   # Label encoder
+├── training_history.pkl                # Training history
+│
+├── NEWS.csv                            # Fake news dataset
+├── CATEGORY.csv                        # News category dataset
+│
+├── DistilBERT for News Category Classification.ipynb
+├── mlprnn.ipynb
+├── mlpbirnn.ipynb
+│
+├── GUI Screenshots
+├── Confusion matrices
+├── Model performance graphs
+```
+
+---
+
+# 🧪 Experimental Results
+
+| Model       | Task                         | Accuracy   |
+| ----------- | ---------------------------- | ---------- |
+| BiRNN + MLP | Fake News Detection          | **95.44%** |
+| DistilBERT  | News Category Classification | **95.12%** |
+
+---
+
+# 📚 Research Publication
 
 This project is based on the research paper:
 
-Fake News Detection using Bidirectional Recurrent Neural Networks
+**Fake News Detection using Bidirectional Recurrent Neural Networks**
 
 Published in an **IEEE Conference** and indexed in:
 
-Scopus
-Web of Science
+• Scopus
+• Web of Science
 
-Paper Link
+📄 Paper Link
 [https://ieeexplore.ieee.org/document/11042304](https://ieeexplore.ieee.org/document/11042304)
 
-## REPOSITORY STRUCTURE
+---
 
-Btech-Final-Year-Project
+# 👨‍💻 Author
 
-.ipynb_checkpoints/
-Notebook checkpoints
-
-logs/
-Training logs and experiment outputs
-
-news_category_model/
-DistilBERT trained model files
-
-news_category_model_trainer/
-Training related artifacts
-
-hybrid_model.h5
-Trained Hybrid BiRNN + MLP model
-
-tokenizer.pkl
-Saved tokenizer used for text preprocessing
-
-label_encoder.pkl
-Label encoding for classification tasks
-
-training_history.pkl
-Model training history and metrics
-
-DistilBERT for News Category Classification.ipynb
-mlprnn.ipynb
-mlpbirnn.ipynb
-Jupyter notebooks used for model training and experimentation
-
-NEWS.csv
-CATEGORY.csv
-Datasets used for model training
-
-PNG / JPG Images
-Model graphs
-Confusion matrices
-Classification reports
-GUI interface screenshots
-Prediction outputs
-
-## PROJECT VISUALIZATION
-
-The repository includes visual results demonstrating model performance:
-
-• Training accuracy graphs
-• Confusion matrices
-• Classification reports
-• Model performance plots
-• GUI screenshots
-• Real-time prediction results
-
-## AUTHOR
-
-Yogesh Yelewad
+**Yogesh Yelewad**
 B.Tech Electronics and Computer Engineering
 SRM Institute of Science and Technology
 
-LinkedIn
+🔗 LinkedIn
 [https://www.linkedin.com/in/yogeshyelewad](https://www.linkedin.com/in/yogeshyelewad)
 
-GitHub
+🔗 GitHub
 [https://github.com/yb0297](https://github.com/yb0297)
 
-## ACKNOWLEDGMENT
+---
 
-This project was completed as part of my **B.Tech Final Year Research Project at SRM Institute of Science and Technology** under faculty guidance.
+# 🙏 Acknowledgment
 
-## LICENSE
+This work was completed as part of my **B.Tech Final Year Research Project at SRM Institute of Science and Technology** under faculty guidance.
+
+---
+
+# 📜 License
 
 This repository is shared for **research and educational purposes only**.
 
 ---
 
-✅ This version is **stronger for recruiters because it highlights**
+✅ **This version is stronger because it adds**
 
-• AI research
-• IEEE publication
-• deep learning models
-• NLP pipeline
-• real application (GUI)
-• model performance
-• structured project explanation
+• GitHub badges
+• architecture diagrams
+• confusion matrices
+• GUI screenshots
+• performance tables
+• professional structure
+
