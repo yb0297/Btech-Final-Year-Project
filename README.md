@@ -235,14 +235,3 @@ This work was completed as part of my **B.Tech Final Year Research Project at SR
 
 This repository is shared for **research and educational purposes only**.
 
----
-
-✅ **This version is stronger because it adds**
-
-• GitHub badges
-• architecture diagrams
-• confusion matrices
-• GUI screenshots
-• performance tables
-• professional structure
-
