@@ -1,185 +1,172 @@
 
 # AI Research Project | Fake News Detection & News Category Classification
 
-This repository contains the **extended implementation of my B.Tech Final Year Project**, focused on **Fake News Detection and News Category Classification using Deep Learning and Natural Language Processing (NLP).**
+This repository contains the extended implementation of my **B.Tech Final Year Project**, focused on **Fake News Detection and News Category Classification using Deep Learning and Natural Language Processing (NLP).**
 
-The project builds upon my **IEEE conference research paper** and introduces additional improvements including **DistilBERT based classification and a GUI application for real-time predictions.**
+The project builds upon my **IEEE conference research paper** and introduces additional improvements including **DistilBERT-based classification and a GUI application for real-time predictions.**
 
-Research Paper:
+Research Paper
 [https://ieeexplore.ieee.org/document/11042304](https://ieeexplore.ieee.org/document/11042304)
 
----
+## PROJECT OVERVIEW
 
-# Project Overview
-
-With the rapid growth of digital media platforms, identifying **misinformation and automatically categorizing news articles** has become a critical challenge.
+With the rapid growth of digital media platforms, identifying misinformation and automatically categorizing news articles has become a critical challenge.
 
 This project develops a **hybrid Artificial Intelligence system** capable of:
 
-• Detecting **fake vs real news articles**
-• Classifying news into **multiple categories**
-• Providing **real-time predictions through a graphical interface**
+• Detecting fake vs real news articles
+• Classifying news into multiple categories
+• Providing real-time predictions through a graphical interface
 
 The system combines **deep learning architectures with transformer-based embeddings** to improve classification accuracy.
 
----
+## KEY FEATURES
 
-# Key Features
+• Fake News Detection using **Bidirectional Recurrent Neural Networks (BiRNN)**
+• News Category Classification using **DistilBERT Transformer**
+• Hybrid **BiRNN + MLP deep learning architecture**
+• Complete **NLP preprocessing pipeline**
+• Real-time prediction using **Tkinter GUI application**
+• Performance evaluation using **accuracy, precision, recall and F1-score**
+• Visualization of model training and performance metrics
 
-* Fake News Detection using **Bidirectional Recurrent Neural Networks (BiRNN)**
-* News Category Classification using **DistilBERT Transformer**
-* Hybrid **BiRNN + MLP architecture**
-* NLP preprocessing pipeline
-* Real-time prediction through **Tkinter GUI**
-* Performance evaluation using **accuracy, precision, recall and F1-score**
-* Training visualization and performance graphs
+## AI / MACHINE LEARNING TECHNOLOGIES
 
----
-
-# AI / Machine Learning Technologies
-
-### Programming Language
-
+Programming Language
 Python
 
-### Deep Learning
+Deep Learning Models
+• Recurrent Neural Networks (RNN)
+• Bidirectional RNN (BiRNN)
+• Multi-Layer Perceptron (MLP)
+• DistilBERT Transformer Model
 
-* Recurrent Neural Networks (RNN)
-* Bidirectional RNN (BiRNN)
-* Multi Layer Perceptron (MLP)
-* Transformer Models
+Natural Language Processing
+• Tokenization
+• Stopword Removal
+• Stemming
+• Lemmatization
+• Text Padding
 
-### Natural Language Processing
+Libraries and Frameworks
+• TensorFlow / Keras
+• PyTorch
+• HuggingFace Transformers
+• Scikit-learn
+• NumPy
+• Pandas
+• Matplotlib
 
-* Tokenization
-* Stopword Removal
-* Stemming
-* Lemmatization
-* Text Padding
+## MODEL ARCHITECTURE
 
-### Libraries & Frameworks
+The project contains two AI pipelines.
 
-* TensorFlow / Keras
-* PyTorch
-* HuggingFace Transformers
-* Scikit-learn
-* NumPy
-* Pandas
-* Matplotlib
+Fake News Detection
 
----
-
-# Model Architecture
-
-The system consists of **two major AI pipelines**.
-
-## 1️⃣ Fake News Detection
-
-A **hybrid deep learning architecture** is used for binary classification.
+A hybrid deep learning architecture is used for binary classification.
 
 BiRNN → Feature Extraction
-↓
 MLP → Classification
-↓
-Output: Fake / Real
+Output → Fake / Real
 
-Performance Achieved
+Model Accuracy Achieved
+95.44%
 
-Accuracy: **95.44%**
+News Category Classification
 
----
+The project uses **DistilBERT Transformer embeddings** to perform multi-class news category classification.
 
-## 2️⃣ News Category Classification
+Model Accuracy Achieved
+95.12%
 
-For multi-class classification, the project uses a **DistilBERT Transformer model** to generate contextual embeddings and perform category prediction.
+## DATASETS
 
-Performance Achieved
+The models were trained using publicly available datasets.
 
-Accuracy: **95.12%**
+• IFND (Indian Fake News Dataset)
+• News Category Dataset
 
----
+The datasets were cleaned and processed using standard NLP techniques before model training.
 
-# Dataset
+## GRAPHICAL USER INTERFACE
 
-The models were trained using publicly available datasets:
+The project includes a **Tkinter-based GUI application** for real-time news prediction.
 
-* **IFND (Indian Fake News Dataset)**
-* **News Category Dataset**
+The interface allows users to:
 
-Data was preprocessed using standard NLP techniques before model training.
+• Enter news text
+• Detect whether the news is **fake or real**
+• Predict the **news category**
 
----
+The GUI demonstrates the trained AI models in a **user-friendly interactive format.**
 
-# Graphical User Interface
-
-The project includes a **Tkinter-based GUI application** that allows users to interact with the trained models.
-
-Users can:
-
-* Enter news text
-* Detect if the article is **fake or real**
-* Predict the **news category**
-
-This provides a **real-time demonstration of the trained AI models.**
-
----
-
-# Research Publication
+## RESEARCH PUBLICATION
 
 This project is based on the research paper:
 
-**Fake News Detection using Bidirectional Recurrent Neural Networks**
+Fake News Detection using Bidirectional Recurrent Neural Networks
 
 Published in an **IEEE Conference** and indexed in **Scopus / Web of Science.**
 
 Paper Link
 [https://ieeexplore.ieee.org/document/11042304](https://ieeexplore.ieee.org/document/11042304)
 
----
+## REPOSITORY STRUCTURE
 
-# Repository Structure
-
-```
 Btech-Final-Year-Project
-│
-├── news_category_model/
-│   └── DistilBERT trained model files
-│
-├── news_category_model_trainer/
-│   └── training artifacts
-│
-├── *.ipynb
-│   └── Jupyter notebooks for experiments and training
-│
-├── *.h5
-│   └── trained deep learning models
-│
-├── *.safetensors
-│   └── transformer model weights
-│
-├── *.csv
-│   └── datasets used for training
-│
-└── *.png / *.jpg
-    └── results, training graphs and GUI screenshots
-```
 
----
+.ipynb_checkpoints/
+Notebook checkpoints
 
-# Screenshots
+logs/
+Training logs
 
-The repository includes visual outputs such as:
+news_category_model/
+DistilBERT trained model files
 
-* Model training accuracy graphs
-* Confusion matrix results
-* GUI application interface
-* Prediction outputs
+news_category_model_trainer/
+Training related artifacts
 
-These demonstrate the performance and usability of the AI system.
+hybrid_model.h5
+Trained hybrid BiRNN + MLP model
 
----
+tokenizer.pkl
+Saved tokenizer used for preprocessing
 
-# Author
+label_encoder.pkl
+Label encoding for classification
+
+training_history.pkl
+Model training history
+
+DistilBERT for News Category Classification.ipynb
+mlprnn.ipynb
+mlpbirnn.ipynb
+Jupyter notebooks for training and experimentation
+
+NEWS.csv
+CATEGORY.csv
+Datasets used for model training
+
+Multiple PNG / JPG images
+Model graphs
+Confusion matrices
+GUI screenshots
+Prediction outputs
+
+## PROJECT VISUALS
+
+The repository includes visual outputs demonstrating model performance and application interface.
+
+Examples include:
+
+• Model accuracy graphs
+• Confusion matrices
+• Classification reports
+• GUI interface screenshots
+• Real-time prediction outputs
+
+## AUTHOR
 
 Yogesh Yelewad
 B.Tech Electronics and Computer Engineering
@@ -191,16 +178,14 @@ LinkedIn
 GitHub
 [https://github.com/yb0297](https://github.com/yb0297)
 
----
-
-# Acknowledgment
+## ACKNOWLEDGMENT
 
 This project was completed as part of my **B.Tech Final Year Project at SRM Institute of Science and Technology** under faculty guidance.
 
----
-
-# License
+## LICENSE
 
 This repository is shared for **research and educational purposes only.**
 
- show you **one small section that makes AI recruiters immediately trust the project more (almost like a production ML repo)**.
+---
+
+If you want, I can also show you **3 small GitHub improvements that will make your project look like a professional AI research repository instead of a student project** (this matters a lot for recruiters).
